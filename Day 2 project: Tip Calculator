@@ -1,0 +1,7 @@
+bill_amt=int(input("What is the bill amount?"))
+tip_percent=int(input("How much tip you want to give: 10, 12 or 15 (in percent)?"))
+people=int(input("How many people are there?"))
+tip=(bill_amt*tip_percent)/100
+#Format the result to 2 decimal places
+total_amt=round((bill_amt+tip)/people,2)
+print(f"Each person will pay: {total_amt}")
